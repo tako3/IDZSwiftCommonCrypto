@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/iosdevzone/IDZSwiftCommonCrypto.git", :tag => s.version.to_s }
+  s.source       = { :git => "https://github.com/tako3/IDZSwiftCommonCrypto.git", :tag => s.version.to_s }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -68,7 +68,7 @@ Pod::Spec.new do |s|
   if [ ! -e CommonCrypto ]; then 
     pwd
     echo Running GenerateCommonCryptoModule
-    ./GenerateCommonCryptoModule iphonesimulator9.1 .  
+    ./GenerateCommonCryptoModule iphonesimulator .
   else 
     echo Skipped GenerateCommonCryptoModule 
   fi
